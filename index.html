@@ -59,7 +59,7 @@ layout: default
       {% if post.category == "print" %}
         <div class="print_block">
           <h3>{{ post.title }}</h3>
-          <span><strong>{{ post.date | date_to_string }}</strong> - {{ post.tags | array_to_sentence_string }}</span>
+          <!-- <span><strong>{{ post.date | date_to_string }}</strong> - {{ post.tags | array_to_sentence_string }}</span> -->
           {% if post.description %} 
             <p> {{ post.description }} </p>
           {% endif %}
@@ -79,7 +79,7 @@ layout: default
       {% if post.category == "conference" %}
         <div class="conf_block">
           <h3>{{ post.title }}</h3>
-          <span><strong>{{ post.date | date_to_string }}</strong> - {{ post.tags | array_to_sentence_string }}</span>
+          <!-- <span><strong>{{ post.date | date_to_string }}</strong> - {{ post.tags | array_to_sentence_string }}</span> -->
           {% if post.description %} 
             <p> {{ post.description }} </p>
           {% endif %}
