@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab');
 
 body{
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0px;
   color: #{{ site.colors.text }};
 }
@@ -281,39 +281,21 @@ body{
 
 }
 
-/* Publicationsセクションの下に区切り線 */
-#print_block, .print_block {
-  border-bottom: 1px solid #3f3d3d;
-  padding-bottom: 15px;
-  margin-bottom: 20px;
+#print_block,
+.print_block,
+#conferences,
+.conf_block,
+.edu_block,
+.exp_block,
+.awards_block,
+.skill_block {
+    border-bottom: 1px solid #777676;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
 }
 
-/* Conferencesセクションの下に区切り線 */
-#conferences, .conf_block {
-  border-bottom: 1px solid #3f3d3d;
-  padding-bottom: 15px;
-  margin-bottom: 20px;
+/* 最後のセクション(.skill_block)の下にはラインを表示しないようにする */
+.skill_block {
+    border-bottom: none;
 }
 
-/* Educationセクションの下に区切り線 */
-.edu_block {
-  border-bottom: 1px solid #3f3d3d;
-  padding-bottom: 15px;
-  margin-bottom: 20px;
-}
-
-/* Experienceセクションの下に区切り線 */
-.exp_block {
-  border-bottom: 1px solid #3f3d3d;
-  padding-bottom: 15px;
-  margin-bottom: 20px;
-}
-
-/* Awardsセクションの下に区切り線 */
-.awards_block {
-  border-bottom: 1px solid #3f3d3d;
-  padding-bottom: 15px;
-  margin-bottom: 20px;
-}
-
-/* Skillsセクションの下には特にラインを入れない（末尾なので不要） */
