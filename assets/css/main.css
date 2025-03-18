@@ -283,35 +283,35 @@ body{
 
 /* Publicationsセクションの下に区切り線 */
 #print_block, .print_block {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #3f3d3d;
   padding-bottom: 15px;
   margin-bottom: 20px;
 }
 
 /* Conferencesセクションの下に区切り線 */
 #conferences, .conf_block {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #3f3d3d;
   padding-bottom: 15px;
   margin-bottom: 20px;
 }
 
 /* Educationセクションの下に区切り線 */
 .edu_block {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #3f3d3d;
   padding-bottom: 15px;
   margin-bottom: 20px;
 }
 
 /* Experienceセクションの下に区切り線 */
 .exp_block {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #3f3d3d;
   padding-bottom: 15px;
   margin-bottom: 20px;
 }
 
 /* Awardsセクションの下に区切り線 */
 .awards_block {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #3f3d3d;
   padding-bottom: 15px;
   margin-bottom: 20px;
 }
