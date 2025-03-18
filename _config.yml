@@ -52,13 +52,13 @@ colors:
 
 # Colors - dark mode
 colors_dark:
-  background: 333
-  text: ccc
-  tag: 2e6830
-  tag_hover: 93cf95
-  header_background: 232
-  header_text: 93cf95
-  header_link: 93cf95
-  header_link_hover: 459c48
-  links: 459c48
-  links_visited: 357a38
+  background: 333333
+  text: cccccc
+  tag: 2e3568
+  tag_hover: 93a9cf
+  header_background: rgb(34, 45, 51)
+  header_text: 93b2cf
+  header_link: 93c3cf
+  header_link_hover: 45869c
+  links: 458c9c
+  links_visited: 2f8699
