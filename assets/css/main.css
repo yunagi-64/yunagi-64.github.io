@@ -259,7 +259,7 @@ body{
   .content {
     width: 800px;
     position: relative;
-    left: calc(calc(100% - 350px)/2 - 400px + 350px);
+    left: calc(calc(100% - 350px)/2 - 500px + 350px);
   }
 
 }
