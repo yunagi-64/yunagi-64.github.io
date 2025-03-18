@@ -162,7 +162,7 @@ body{
 }
 
 .content {
-  padding: 20px 40px;
+  padding: 10px 20px;
 }
 
 .post_block h3 {
@@ -237,7 +237,7 @@ body{
 
   .header {
     position: fixed;
-    width: 350px;
+    width: 400px;
     height: 100%;
     top: 0;
     left: 0;
