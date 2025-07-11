@@ -11,7 +11,7 @@
   width: 100vw;
   background: #ffffff;
   color: rgb(119, 117, 117);
-  border: 1px solid #81b4db;
+  border: 1px solid #b9baba;
   padding: 8px 16px;
   z-index: 9999;
   text-align: right;
@@ -167,6 +167,7 @@ body{
 .header {
   background-color: #{{ site.colors.header_background }};
   color: #{{ site.colors.header_text }};
+  padding-top: 44px;
 }
 
 .header h1, a {
@@ -213,6 +214,7 @@ body{
   .header {
     background-color: #{{ site.colors_dark.header_background }};
     color: #{{ site.colors_dark.header_text }};
+    padding-top: 44px;
   }
 
   .header a {
