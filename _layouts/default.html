@@ -40,6 +40,24 @@ Get assets path
         // Show the one we want
         document.getElementById(tag).style.display = 'block';
       }
+        // 選択時にページ遷移（/ja/, /en/）
+        document.addEventListener('DOMContentLoaded', function() {
+          var select = document.getElementById('lang-select');
+          if (!select) return;
+          // 今のページの言語選択状態にする
+          var path = window.location.pathname;
+          if (path.startsWith('/en/')) select.value = 'en';
+          else select.value = 'ja';
+          // 切り替え動作
+          select.addEventListener('change', function() {
+            var lang = this.value;
+            var path = window.location.pathname;
+            // /ja/ や /en/ の除去
+            var newPath = path.replace(/^\/(ja|en)/, '');
+            if (newPath === '' || newPath === '/') newPath = '/index.html';
+            window.location.pathname = '/' + lang + newPath;
+          });
+        });
     </script>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     {% seo %}

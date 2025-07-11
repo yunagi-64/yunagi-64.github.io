@@ -9,8 +9,9 @@
   top: 0;
   left: 0;
   width: 100vw;
-  background: #333;
-  color: white;
+  background: #ffffff;
+  color: rgb(119, 117, 117);
+  border: 1px solid #81b4db;
   padding: 8px 16px;
   z-index: 9999;
   text-align: right;
@@ -21,9 +22,9 @@
 }
 
 #lang-banner select {
-  background: #444;
-  color: #fff;
-  border: 1px solid #555;
+  background: #ebf3f8;
+  color: #323232;
+  border: 1px solid rgb(119, 117, 117);
   border-radius: 4px;
   padding: 4px 10px;
   font-size: 14px;
