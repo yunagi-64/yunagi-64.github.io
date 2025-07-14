@@ -299,6 +299,20 @@ body{
     top: 0;
     left: 0;
   }
+
+  .link_group {
+    padding-top: 30px;
+  }
+
+  .name_group {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  div.small_header {
+    display:none;
+  }
+
   .content {
     width: auto;              /* 必要に応じてmax-widthやpaddingを追加 */
     margin-left: 400px;       /* これが絶対に必要！ */
