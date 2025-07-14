@@ -312,7 +312,7 @@ body{
 
 }
 
-#papers,
+/* #papers,
 #conferences,
 .edu_block,
 .exp_block,
@@ -324,9 +324,9 @@ body{
 }
 
 /* 最後のセクション(.skill_block)の下にはラインを表示しないようにする */
-.skill_block {
+/* .skill_block {
     border-bottom: none;
-}
+} */
 
 /* プロフィール写真を円形にするCSS */
 img.center_img,
