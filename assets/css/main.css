@@ -314,13 +314,11 @@ body{
 
 #papers,
 #conferences,
-.print_block,
-.conf_block,
 .edu_block,
 .exp_block,
 .awards_block,
 .skill_block {
-    border-bottom: 1px solid #a5a4a4;
+    border-bottom: 1px solid #dcdcdc;
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
