@@ -42,36 +42,85 @@ Get assets path
       }
         document.addEventListener('DOMContentLoaded', function() {
           var path = window.location.pathname;
-          var isEnglish = path.startsWith('/en/');
-          // スイッチボタンの取得
+          // ★ここを修正：/ja/で始まるかどうか
+          var isJapanese = path.startsWith('/ja/');
+          // 英語ページは / もしくは /index.html
           var btnEn = document.getElementById('lang-en');
           var btnJa = document.getElementById('lang-ja');
           if (!btnEn || !btnJa) return;
 
-          // 選択中ボタンにactiveクラスを追加（CSS用、任意）
-          if (isEnglish) {
-            btnEn.classList.add('active');
-          } else {
+          // activeクラス付与
+          if (isJapanese) {
             btnJa.classList.add('active');
+          } else {
+            btnEn.classList.add('active');
           }
 
           // 切り替え動作
           btnEn.addEventListener('click', function() {
-            if (isEnglish) return; // すでに英語なら何もしない
+            if (!isJapanese) return; // すでに英語なら何もしない
             switchLang('en');
           });
           btnJa.addEventListener('click', function() {
-            if (!isEnglish) return; // すでに日本語なら何もしない
+            if (isJapanese) return; // すでに日本語なら何もしない
             switchLang('ja');
           });
 
           function switchLang(lang) {
             var path = window.location.pathname;
-            var newPath = path.replace(/^\/(ja|en)/, '');
-            if (newPath === '' || newPath === '/') newPath = '/index.html';
-            window.location.pathname = '/' + lang + newPath;
+            if (lang === 'en') {
+              // 日本語ページなら /ja/ を取り除いてルートへ
+              var newPath = path.replace(/^\/ja(\/|$)/, '/');
+              if (newPath === '/' || newPath === '/index.html' || newPath === '') {
+                window.location.pathname = '/index.html';
+              } else {
+                // 他ページもある場合は個別対応（例: /ja/foo.html → /foo.html）
+                window.location.pathname = newPath;
+              }
+            } else if (lang === 'ja') {
+              // 英語ページなら /ja/ を先頭に付ける
+              var newPath = path.replace(/^\//, ''); // 先頭の/除去
+              if (newPath === '' || newPath === 'index.html') {
+                window.location.pathname = '/ja/index.html';
+              } else {
+                window.location.pathname = '/ja/' + newPath;
+              }
+            }
           }
         });
+
+        // document.addEventListener('DOMContentLoaded', function() {
+        //   var path = window.location.pathname;
+        //   var isEnglish = path.startsWith('/en/');
+        //   // スイッチボタンの取得
+        //   var btnEn = document.getElementById('lang-en');
+        //   var btnJa = document.getElementById('lang-ja');
+        //   if (!btnEn || !btnJa) return;
+
+        //   // 選択中ボタンにactiveクラスを追加（CSS用、任意）
+        //   if (isEnglish) {
+        //     btnEn.classList.add('active');
+        //   } else {
+        //     btnJa.classList.add('active');
+        //   }
+
+        //   // 切り替え動作
+        //   btnEn.addEventListener('click', function() {
+        //     if (isEnglish) return; // すでに英語なら何もしない
+        //     switchLang('en');
+        //   });
+        //   btnJa.addEventListener('click', function() {
+        //     if (!isEnglish) return; // すでに日本語なら何もしない
+        //     switchLang('ja');
+        //   });
+
+        //   function switchLang(lang) {
+        //     var path = window.location.pathname;
+        //     var newPath = path.replace(/^\/(ja|en)/, '');
+        //     if (newPath === '' || newPath === '/') newPath = '/index.html';
+        //     window.location.pathname = '/' + lang + newPath;
+        //   }
+        // });
 
     </script>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
