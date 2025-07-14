@@ -11,7 +11,7 @@ layout: default
 
 <div>
 
-  <p>{{ site.long_description }}</p>
+  <p>{{ site.long_description_ja }}</p>
 
   {% comment %} 
   Get tags from all posts
@@ -56,7 +56,7 @@ layout: default
   {% endfor %}
   </p> -->
 
-  <div id="all_posts">
+  <!-- <div id="all_posts">
 
 
     <div id="papers">
@@ -64,10 +64,10 @@ layout: default
       <p>*corresponding author; †equal contribution; ‡equal last author; §team lead</p>
       {% for post in site.posts %}
       {% if post.category == "print" %}
-        <div class="print_block">
+        <div class="print_block"> -->
           <!-- <h3>{{ post.title }}</h3> -->
           <!-- <span><strong>{{ post.date | date_to_string }}</strong> - {{ post.tags | array_to_sentence_string }}</span> -->
-          {% if post.description %} 
+          <!-- {% if post.description %} 
             <p> {{ post.description }} </p>
           {% endif %}
           {% if post.img_url %} 
@@ -84,10 +84,10 @@ layout: default
       <h2> Conferences (not peer reviewed)</h2>
       {% for post in site.posts %}
       {% if post.category == "conference" %}
-        <div class="conf_block">
+        <div class="conf_block"> -->
           <!-- <h3>{{ post.title }}</h3> -->
           <!-- <span><strong>{{ post.date | date_to_string }}</strong> - {{ post.tags | array_to_sentence_string }}</span> -->
-          {% if post.description %} 
+          <!-- {% if post.description %} 
             <p> {{ post.description }} </p>
           {% endif %}
           {% if post.img_url %} 
@@ -101,13 +101,50 @@ layout: default
     </div>
 
 
-  </div>
+  </div> -->
+
+  <h2> Publications/Preprints </h2>
+    <div  class="print_block">
+      <p>
+        *corresponding author; †equal contribution; ‡equal last author; §team lead<br />
+        
+        <u>Yuko Nakagi†§</u>, Keigo Tada†, Sota Yoshino†, Shinji Nishimoto*‡, Yu Takagi*‡<br />
+        <b><a href="https://www.arxiv.org/abs/2502.20779">Triple Phase Transitions: Understanding the Learning Dynamics of Large Language Models from a Neuroscience Perspective</a></b><br />
+        <i>arXiv</i>, 2025<br /><br />
+        
+        <u>Yuko Nakagi†</u>, Takuya Matsuyama†, Naoko Koide-Majima, Hiroto Yamaguchi, Rieko Kubo, Shinji Nishimoto*‡, Yu Takagi*‡<br />
+        <b><a href="https://aclanthology.org/2024.emnlp-main.1133/">Unveiling Multi-level and Multi-modal Semantic Representations in the Human Brain using Large Language Models</a></b><br />
+        [<a href="https://sites.google.com/view/llm-and-brain/%E3%83%9B%E3%83%BC%E3%83%A0">Project page</a>]<br />
+        <i>EMNLP</i>, 2024<br /><br />
+      </p>
+    </div>
+
+  <h2> Conferences (not peer reviewed)</h2>
+    <div class="conf_block">
+      <p>
+        <u>中木 裕子†§</u>, 多田 圭吾†, 吉野 草太†, 西本 伸志*‡, 高木 優*‡<br />
+        <b><a href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/E10-5.pdf">Triple-Phase Transition: 脳との関係から捉える大規模言語モデルの学習ダイナミクス</a></b><br />
+        <i>言語処理学会第31回年次大会 (NLP2025)</i>, 長崎, 日本, 2025年3月<br /><br />
+
+        <u>中木 裕子</u>, 松山 卓矢, 小出(間島) 真子, 山口 裕人, 久保 理恵子, 西本 伸志, 高木 優<br />
+        <b><a href="https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_2K6OS20b01/_article/-char/en">音声・物体・物語レベルの意味理解に関するヒト脳活動と大規模言語モデルの潜在表現の対応</a></b><br />
+        <i> 2024年度人工知能学会全国大会（第38回）(JSAI2024)</i>, 浜松, 日本, 2024年5月<br /><br />
+
+        <u>中木 裕子</u>, 西本 伸志, 高木 優<br />
+        <b>集団行動知覚時のヒト脳における位置情報表現</b><br />
+        <i>第46回日本神経科学大会(Neuro2023)</i>, 仙台, 日本, 2023年8月<br /><br />
+      </p>
+    </div>
 
   <h2> Awards </h2>
   <div class="awards_block">
-    <b>NLP2025 若手奨励賞</b><br />
-      <a href="https://anlp.jp/nlp2025/">31th Annual Conference of the Association for Natural Language Processing (NLP2025)</a>,<br />
-      長崎, 日本, 2025年3月13日<br />
+    <b>若手奨励賞</b><br />
+      <a href="https://anlp.jp/nlp2025/">言語処理学会第31回年次大会(NLP2025)</a><br />
+      長崎, 日本, 2025年3月13日<br /><br />
+    
+    <b>ベストプレゼンテーション賞</b><br />
+      2024年度生命機能研究科 中間評価論文公聴会<br />
+      大阪, 日本, 2025年3月25日<br /><br />
   </div>
   
   <h2> Education </h2>
@@ -137,7 +174,7 @@ layout: default
         </p>
       <p><i>2023年4月 - 2025年3月</i><br />
         協力研究員 <br /> <a href="https://www.cinet.jp/english/">
-          情報通信研究機構 脳情報通信融合研究センター (CiNet NICT)</a>        
+          情報通信研究機構 脳情報通信融合研究センター (NICT CiNet)</a>        
         </p>
       <p><i>2024年2月</i><br />
         研究インターンシップ <br /> <a href="https://www.rd.ntt/">
@@ -145,13 +182,12 @@ layout: default
           Investigation on neural oscillations (EEG) and visual attention during esports
       </p>
       <p><i>2023年9月</i><br />
-        サマースクール <a href="https://weblab.t.u-tokyo.ac.jp/">
+        サマースクール 大規模言語モデル講座 2023 <br /> <a href="https://weblab.t.u-tokyo.ac.jp/">
         東京大学 松尾・岩澤研究室</a><br />
-        大規模言語モデル講座 2023
       </p>
     </div>
 
-  <h2> スキル </h2>
+  <h2> Skills </h2>
     <div class="skill_block">
       <h3>プログラミング言語</h3>
         <p>
