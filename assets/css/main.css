@@ -292,6 +292,23 @@ body{
 
 /* Large screen widths */
 @media print, screen and (min-width: 1300px) {
+  .header {
+    position: fixed;
+    width: 400px;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  .content {
+    width: auto;              /* 必要に応じてmax-widthやpaddingを追加 */
+    margin-left: 400px;       /* これが絶対に必要！ */
+    position: relative;       /* left: 0; でOK。leftの計算は不要 */
+    left: 0;
+    padding: 20px 40px 20px 40px;  /* 右と上下余白はお好みで */
+    box-sizing: border-box;
+  }
+}
+/* @media print, screen and (min-width: 1300px) {
 
   .header {
     position: fixed;
@@ -321,7 +338,7 @@ body{
     left: 20;
   }
 
-}
+} */
 
 /* Small screen widths */
 @media print, screen and (max-width: 1300px) {
