@@ -316,8 +316,9 @@ body{
 
   .content {
     width: 800px;
+    margin-left: 400px;
     position: relative;
-    left: calc(calc(100% - 350px)/2 - 500px + 350px);
+    left: 20;
   }
 
 }
@@ -349,11 +350,6 @@ body{
     padding-bottom: 8px;
     margin-bottom: 18px;
 }
-
-/* 最後のセクション(.skill_block)の下にはラインを表示しないようにする */
-/* .skill_block {
-    border-bottom: none;
-} */
 
 /* プロフィール写真を円形にするCSS */
 img.center_img,
