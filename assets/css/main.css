@@ -312,15 +312,15 @@ body{
 
 }
 
-/* #papers,
+#papers,
 #conferences,
 .edu_block,
 .exp_block,
 .awards_block,
-.skill_block {
+.skill_block h2 {
     border-bottom: 1px solid #dcdcdc;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+    padding-bottom: 8px;
+    margin-bottom: 18px;
 }
 
 /* 最後のセクション(.skill_block)の下にはラインを表示しないようにする */
