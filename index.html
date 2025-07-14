@@ -3,15 +3,13 @@ layout: default
 ---
 <html lang="en"></html>
 <div id="lang-banner">
-  <select id="lang-select">
-    <option value="en">English</option>
-    <option value="ja">Japanese</option>
-  </select>
+  <button id="lang-en" class="lang-switch">English</button> /
+  <button id="lang-ja" class="lang-switch">Japanese</button>
 </div>
 
 <div>
 
-  <p>{{ site.long_description_en }}</p>
+  <p>{{ site.long_description_en }}<br /></p>
 
   {% comment %} 
   Get tags from all posts
@@ -99,6 +97,8 @@ layout: default
       {% endif %}
       {% endfor %}
     </div>
+
+
   </div>
 
   <h2> Awards </h2>
