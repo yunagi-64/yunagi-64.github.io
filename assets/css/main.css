@@ -264,7 +264,7 @@ body{
 {% endunless %}
 
 /* Large screen widths */
-@media print, screen and (min-width: 1240px) {
+@media print, screen and (min-width: 1300px) {
 
   .header {
     position: fixed;
@@ -296,7 +296,7 @@ body{
 }
 
 /* Small screen widths */
-@media print, screen and (max-width: 1240px) {
+@media print, screen and (max-width: 1300px) {
 
   .header {
     width: 100%;
@@ -331,7 +331,8 @@ body{
 }
 
 /* プロフィール写真を円形にするCSS */
-img.center_img {
+img.center_img,
+.name_header_img img {
   border-radius: 50%; /* 画像を円形にする */
   object-fit: cover; /* アスペクト比を維持して表示 */
 }
