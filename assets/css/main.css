@@ -36,8 +36,8 @@
 
 #lang-banner .lang-switch.active,
 #lang-banner .lang-switch:focus {
-  background: #ebf3f8;
-  color: #222;
+  background: none;
+  color: #1e2035;
   outline: none;
   text-decoration: underline;
 }
@@ -339,11 +339,11 @@ body{
 
 }
 
-#papers,
-#conferences,
-.edu_block,
-.exp_block,
-.awards_block,
+#papers h2,
+#conferences h2,
+.edu_block h2,
+.exp_block h2,
+.awards_block h2,
 .skill_block h2 {
     border-bottom: 1px solid #dcdcdc;
     padding-bottom: 8px;
