@@ -9,7 +9,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  background: #ffffff;
+  background: #639ba1;
   color: rgb(119, 117, 117);
   border: 1px solid #b9baba;
   padding: 8px 16px;
@@ -24,7 +24,7 @@
 #lang-banner .lang-switch {
   background: none;
   border: none;
-  color: #616161;
+  color: #797979;
   font-weight: bold;
   font-size: 15px;
   margin: 0 8px;
@@ -37,7 +37,7 @@
 #lang-banner .lang-switch.active,
 #lang-banner .lang-switch:focus {
   background: none;
-  color: #1e2035;
+  color: #383838;
   outline: none;
   text-decoration: underline;
 }
@@ -373,6 +373,7 @@ body{
 
 #papers h2,
 #conferences h2,
+.car_block h2,
 .edu_block h2,
 .exp_block h2,
 .awards_block h2,
