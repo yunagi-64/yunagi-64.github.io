@@ -52,8 +52,8 @@ colors:
   header_background: 92d0ee #cfeffb
   header_text: 002e3e
   header_link_hover: 000f14
-  links: 354a54
-  links_visited: 2a3a42
+  links: 00374f
+  links_visited: 002d40
 
 # Colors - dark mode
 colors_dark:
