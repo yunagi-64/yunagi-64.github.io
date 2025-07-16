@@ -1,10 +1,10 @@
 # Info about you
 name: Yuko Nakagi
-position: Graduate Student
+position: Worker
 email:
-company_name: Osaka University
-company_url: https://www.fbs.osaka-u.ac.jp/en/
-place_name: Osaka, Japan
+company_name: NTT Communication Science Laboratories
+company_url: https://www.rd.ntt/e/cs/
+place_name: Kyoto, Japan
 
 # Blog info
 title: Yuko Nakagi
@@ -12,12 +12,12 @@ description: Personal website
 url: https://yunagi-64.github.io
 main_github_io: true
 long_description_en: >-
-    Hi, I am a second-year master's student at Osaka University.
+    Hi, I work at NTT Communication Science Laboratories.
     My research interest is to investigate how the human brain perceives and recognizes the world.
     Recently, I have been particularly interested in exploring the relationship between the human brain and artificial intelligence, especially large language models (LLMs).
 
 long_description_ja: >-
-    初めまして！大阪大学大学院生命機能研究科修士課程二年生の中木裕子です。
+    初めまして！NTTコミュニケーション科学基礎研究所の中木裕子です。
     人間の脳がどのように世界を知覚し、認識するのかを明らかにすることに興味を持って研究を進めています。
     最近は特に、人間の脳と人工知能（特に大規模言語モデル）との関係性を探ることに興味を持っています。
     
@@ -31,8 +31,8 @@ social:
 
 # Images + files
 logo: assets/img/my_image.JPG
-cv_url: assets/files/cv.pdf
-resume_url: assets/files/resume.pdf
+# cv_url: assets/files/cv.pdf
+# resume_url: assets/files/resume.pdf
 
 # Blog settings
 markdown: kramdown
@@ -46,14 +46,14 @@ syntax_highlight_stylesheet: syntax_highlight.css
 
 # Colors - light mode
 colors:
-  text: 282828
+  text: 383838
   tag: dbefdc
   tag_hover: 93cf95
-  header_background: cfeffb
+  header_background: 92d0ee #cfeffb
   header_text: 002e3e
   header_link_hover: 000f14
-  links: 4171f7
-  links_visited: 0c4cfe
+  links: 354a54
+  links_visited: 2a3a42
 
 # Colors - dark mode
 colors_dark:
@@ -62,8 +62,8 @@ colors_dark:
   tag: 2e3568
   tag_hover: 93a9cf
   header_background: rgb(34, 45, 51)
-  header_text: 93b2cf
-  header_link: 93c3cf
+  header_text: b4bfca
+  header_link: b4bfca
   header_link_hover: 45869c
-  links: 458c9c
-  links_visited: 2f8699
+  links: 83c2c9
+  links_visited: 639ba1
