@@ -53,6 +53,7 @@ body{
   font-family: Arial, sans-serif;
   margin: 0px;
   color: #{{ site.colors.text }};
+  line-height: 1.8;
 }
 
 .col3 {
