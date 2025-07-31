@@ -38,6 +38,7 @@ logo: assets/img/my_image.JPG
 markdown: kramdown
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 highlighter: rouge
 color_mode: light  # auto, light, or dark
 comments: false
