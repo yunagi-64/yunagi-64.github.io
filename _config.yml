@@ -9,7 +9,7 @@ place_name: Kyoto, Japan
 # Blog info
 title: Yuko Nakagi
 description: Personal website
-url: https://yunagi-64.github.io
+url: "https://yunagi-64.github.io"
 main_github_io: true
 long_description_en: >-
     Hi, I work at NTT Communication Science Laboratories.
